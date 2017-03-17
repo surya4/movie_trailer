@@ -1,48 +1,46 @@
-[
-{"Title":"Rogue One",
-  "Year":"2016",
-  "Rated":"PG-13",
-  "Released":"16 Dec 2016",
-  "Runtime":"133 min",
-  "Genre":"Action, Adventure, Sci-Fi",
-  "Director":"Gareth Edwards",
-  "Writer":"Chris Weitz (screenplay), Tony Gilroy (screenplay), John Knoll (story by), Gary Whitta (story by), George Lucas (based on characters created by)",
-  "Actors":"Felicity Jones, Diego Luna, Alan Tudyk, Donnie Yen",
-  "Plot":"All looks lost for the Rebellion against the Empire as they learn of the existence of a new super weapon, the Death Star. Once a possible weakness in its construction is uncovered, the Rebel Alliance must set out on a desperate mission to steal the plans for the Death Star. The future of the entire galaxy now rests upon its success.",
-  "Language":"English",
-  "Country":"USA, UK",
-  "Awards":"Nominated for 2 Oscars. Another 7 wins & 54 nominations.",
-  "Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX300.jpg",
-  "Metascore":"65",
-  "imdbRating":"8.1",
-  "imdbVotes":"252,198",
-  "imdbID":"tt3748528",
-  "Type":"movie",
-  "Response":"True"
-},
-  {
-   "Title":"La La Land",
-   "Year":"2016",
-   "Rated":"PG-13",
-   "Released":"25 Dec 2016",
-   "Runtime":"128 min",
-   "Genre":"Comedy, Drama, Musical",
-   "Director":"Damien Chazelle",
-   "Writer":"Damien Chazelle",
-   "Actors":"Ryan Gosling, Emma Stone, Amiée Conn, Terry Walters",
-   "Plot":"Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
-   "Language":"English",
-   "Country":"USA",
-   "Awards":"Nominated for 14 Oscars. Another 153 wins & 204 nominations.",
-   "Poster":"https://images-na.ssl-images-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SX300.jpg",
-   "Metascore":"93",
-   "imdbRating":"8.5",
-   "imdbVotes":"165,257",
-   "imdbID":"tt3783958",
-   "Type":"movie",
-   "Response":"True"
-},
-{
+var movies = [{
+	"Title": "Rogue One",
+	"Year": "2016",
+	"Rated": "PG-13",
+	"Released": "16 Dec 2016",
+	"Runtime": "133 min",
+	"Genre": "Action, Adventure, Sci-Fi",
+	"Director": "Gareth Edwards",
+	"Writer": "Chris Weitz (screenplay), Tony Gilroy (screenplay), John Knoll (story by), Gary Whitta (story by), George Lucas (based on characters created by)",
+	"Actors": "Felicity Jones, Diego Luna, Alan Tudyk, Donnie Yen",
+	"Plot": "All looks lost for the Rebellion against the Empire as they learn of the existence of a new super weapon, the Death Star. Once a possible weakness in its construction is uncovered, the Rebel Alliance must set out on a desperate mission to steal the plans for the Death Star. The future of the entire galaxy now rests upon its success.",
+	"Language": "English",
+	"Country": "USA, UK",
+	"Awards": "Nominated for 2 Oscars. Another 7 wins & 54 nominations.",
+	"Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMjEwMzMxODIzOV5BMl5BanBnXkFtZTgwNzg3OTAzMDI@._V1_SX300.jpg",
+	"Metascore": "65",
+	"imdbRating": "8.1",
+	"imdbVotes": "252,198",
+	"imdbID": "tt3748528",
+	"Type": "movie",
+	"Response": "True"
+}, {
+	"Title": "La La Land",
+	"Year": "2016",
+	"Rated": "PG-13",
+	"Released": "25 Dec 2016",
+	"Runtime": "128 min",
+	"Genre": "Comedy, Drama, Musical",
+	"Director": "Damien Chazelle",
+	"Writer": "Damien Chazelle",
+	"Actors": "Ryan Gosling, Emma Stone, Amiée Conn, Terry Walters",
+	"Plot": "Mia, an aspiring actress, serves lattes to movie stars in between auditions and Sebastian, a jazz musician, scrapes by playing cocktail party gigs in dingy bars, but as success mounts they are faced with decisions that begin to fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
+	"Language": "English",
+	"Country": "USA",
+	"Awards": "Nominated for 14 Oscars. Another 153 wins & 204 nominations.",
+	"Poster": "https://images-na.ssl-images-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SX300.jpg",
+	"Metascore": "93",
+	"imdbRating": "8.5",
+	"imdbVotes": "165,257",
+	"imdbID": "tt3783958",
+	"Type": "movie",
+	"Response": "True"
+}, {
 	"Title": "Deadpool",
 	"Year": "2016",
 	"Rated": "R",
@@ -63,8 +61,7 @@
 	"imdbID": "tt1431045",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Zootopia",
 	"Year": "2016",
 	"Rated": "PG",
@@ -85,8 +82,7 @@
 	"imdbID": "tt2948356",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Moonlight",
 	"Year": "2016",
 	"Rated": "R",
@@ -107,8 +103,7 @@
 	"imdbID": "tt4975722",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Doctor Strange",
 	"Year": "2016",
 	"Rated": "PG-13",
@@ -129,8 +124,7 @@
 	"imdbID": "tt1211837",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Mad Max: Fury Road",
 	"Year": "2015",
 	"Rated": "R",
@@ -151,8 +145,7 @@
 	"imdbID": "tt1392190",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Martian",
 	"Year": "2015",
 	"Rated": "N/A",
@@ -173,8 +166,7 @@
 	"imdbID": "tt6221620",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Inside Out",
 	"Year": "2015",
 	"Rated": "PG",
@@ -195,8 +187,7 @@
 	"imdbID": "tt2096673",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Avengers: Age of Ultron",
 	"Year": "2015",
 	"Rated": "PG-13",
@@ -217,8 +208,7 @@
 	"imdbID": "tt2395427",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Gone Girl",
 	"Year": "2014",
 	"Rated": "R",
@@ -239,8 +229,7 @@
 	"imdbID": "tt2267998",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Interstellar",
 	"Year": "2014",
 	"Rated": "PG-13",
@@ -261,8 +250,7 @@
 	"imdbID": "tt0816692",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "The Lion King",
 	"Year": "1994",
 	"Rated": "G",
@@ -283,8 +271,7 @@
 	"imdbID": "tt0110357",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Forrest Gump",
 	"Year": "1994",
 	"Rated": "PG-13",
@@ -305,8 +292,7 @@
 	"imdbID": "tt0109830",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Pulp Fiction",
 	"Year": "1994",
 	"Rated": "R",
@@ -327,8 +313,7 @@
 	"imdbID": "tt0110912",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Harry Potter and the Prisoner of Azkaban",
 	"Year": "2004",
 	"Rated": "PG",
@@ -349,8 +334,7 @@
 	"imdbID": "tt0304141",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Eternal Sunshine of the Spotless Mind",
 	"Year": "2004",
 	"Rated": "R",
@@ -371,8 +355,7 @@
 	"imdbID": "tt0338013",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Eternal Sunshine of the Spotless Mind",
 	"Year": "2004",
 	"Rated": "R",
@@ -393,8 +376,7 @@
 	"imdbID": "tt0338013",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "12 Angry Men",
 	"Year": "1957",
 	"Rated": "APPROVED",
@@ -415,8 +397,7 @@
 	"imdbID": "tt0050083",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Airplane!",
 	"Year": "1980",
 	"Rated": "PG",
@@ -437,8 +418,7 @@
 	"imdbID": "tt0080339",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "Erin Brockovich",
 	"Year": "2000",
 	"Rated": "R",
@@ -459,8 +439,7 @@
 	"imdbID": "tt0195685",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "The Fast and the Furious: Tokyo Drift",
 	"Year": "2006",
 	"Rated": "PG-13",
@@ -481,8 +460,7 @@
 	"imdbID": "tt0463985",
 	"Type": "movie",
 	"Response": "True"
-},
-{
+}, {
 	"Title": "The Lord of the Rings: The Return of the King",
 	"Year": "2003",
 	"Rated": "PG-13",
@@ -503,7 +481,4 @@
 	"imdbID": "tt0167260",
 	"Type": "movie",
 	"Response": "True"
-}
-]
-
-/* http://www.omdbapi.com/ */
+}]
