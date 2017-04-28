@@ -1,0 +1,17 @@
+<html lang="en">
+  <% include ../partials/header %>
+  <body>
+    <% include ../partials/nav %>
+    <section name="jumbotron">
+                <div class="jumbotron text-center">
+                  <form method="POST" action="/title">
+                  <label for="id">Search</label>
+                  <input type="text" name="title" value="<%= qStr.name %>">
+                  <input type="submit" value="Submit">
+                  </form>
+                </div>
+      </section>
+<% include ../partials/footer %>
+<% include ../partials/scripts %>
+</body>
+</html>

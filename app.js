@@ -32,8 +32,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.get('/',function(req,res){
-    res.render('index',{
-      qs: req.query
+    res.render('pages/index',{
+      qStr: req.query
     });
 });
 
@@ -46,6 +46,7 @@ app.post('/title',urlencodedParser, function(req,res) {
   var queryString = "SELECT * FROM data where title like '%"+key+"%'";
   conn.query(String(queryString),function (err,rows) {
     if (err) throw err;
+    // var plot = rows[0][2];
     var plot = rows[0].Plot;
       res.write(plot);
         res.end();
