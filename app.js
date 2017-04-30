@@ -44,11 +44,28 @@ app.get('/title',function(req,res){
 
 app.post('/title',urlencodedParser, function(req,res) {
   var key = req.body.title;
+  // console.log("key"+JSON.stringify(req.body));
   var queryString = "SELECT * FROM data where title like '%"+key+"%'";
   conn.query(String(queryString),function (err,rows) {
     if (err) throw err;
-    var plot = rows[0].Plot;
-      res.write(plot);
+    var name = rows[0].Title;
+        year = rows[0].Year,
+        rating = rows[0].Rated
+        releas = rows[0].Released,
+        dur = rows[0].Runtime,
+        genre = rows[0].Genre,
+        director = rows[0].Director,
+        writer = rows[0].Writer,
+        actors = rows[0].Actors,
+        plot = rows[0].Plot,
+        lang = rows[0].Language,
+        awards = rows[0].Awards,
+        poster = rows[0].Poster,
+        imdbR = rows[0].imdbRating,
+        imdbVotes = rows[0].imdbVotes;
+    // console.log(rows);
+      // res.write(name);
+      res.write(year.toString());
         res.end();
   });
  });
