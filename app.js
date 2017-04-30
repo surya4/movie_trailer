@@ -28,7 +28,8 @@ conn.connect(function(error) {
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 // static files
-app.use(express.static(path.join(__dirname, 'public')));
+// app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(__dirname + '/public'));
 
 
 app.get('/',function(req,res){
@@ -46,7 +47,6 @@ app.post('/title',urlencodedParser, function(req,res) {
   var queryString = "SELECT * FROM data where title like '%"+key+"%'";
   conn.query(String(queryString),function (err,rows) {
     if (err) throw err;
-    // var plot = rows[0][2];
     var plot = rows[0].Plot;
       res.write(plot);
         res.end();

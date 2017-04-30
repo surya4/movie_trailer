@@ -2,12 +2,11 @@
   <% include ../partials/header %>
   <body>
     <% include ../partials/nav %>
-    <section name="jumbotron">
-                <div class="jumbotron text-center">
+    <section name="search-area">
+                <div class="search-row text-center">
                   <form method="POST" action="/title">
-                  <label for="id">Search</label>
-                  <input type="text" name="title" value="<%= qStr.name %>">
-                  <input type="submit" value="Submit">
+                  <input type="search" placeholder="Search movies" name="title" value="<%= qStr.name %>" class="search-input">
+                  <input type="submit" class="search-button" value="Submit">
                   </form>
                 </div>
       </section>
