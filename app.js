@@ -43,11 +43,11 @@ app.get('/title',function(req,res){
 });
 
 app.post('/title',urlencodedParser, function(req,res) {
-  var key = req.body.title;
+  var key = req.body;
   var queryString = "SELECT * FROM data where title like '%"+key+"%'";
   conn.query(String(queryString),function (err,rows) {
     if (err) throw err;
-    var plot = rows[0].Plot;
+    var plot = rows;
       res.write(plot);
         res.end();
   });

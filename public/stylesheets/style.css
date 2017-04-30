@@ -8,8 +8,13 @@ body {
     margin-bottom: 60px;
 }
 
+.logo{
+  font-size: 2rem;
+  color: black;
+}
+
 .search-input{
--webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: "Playfair Display", Sans-Serif;
     font-size: 4rem;
@@ -42,14 +47,14 @@ border: 1px solid #fff;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 60px;
-    background-color: #507cd8;
+    /*height: 60px;*/
+    background-color: #eee;
 }
-.footer p {
-    line-height: 60px;
+footer p {
+    line-height: 40px;
     color: white;
 }
-.footer a {
-    color: #efb22e;
+footer a {
+    color: #424242;
     text-decoration: none;
-}
+}*/
