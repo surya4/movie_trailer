@@ -42,15 +42,15 @@ app.get('/title',function(req,res){
   res.render('pages/title');
 });
 
-app.post('/title',urlencodedParser, function(req,res) {
+app.post('/title',urlencodedParser, function(req,res,next) {
   var key = req.body.title;
   // console.log("key"+JSON.stringify(req.body));
   var queryString = "SELECT * FROM data where title like '%"+key+"%'";
   conn.query(String(queryString),function (err,rows) {
     if (err) throw err;
-    var name = rows[0].Title;
+    var name = rows[0].Title,
         year = rows[0].Year,
-        rating = rows[0].Rated
+        rating = rows[0].Rated,
         releas = rows[0].Released,
         dur = rows[0].Runtime,
         genre = rows[0].Genre,
@@ -63,12 +63,18 @@ app.post('/title',urlencodedParser, function(req,res) {
         poster = rows[0].Poster,
         imdbR = rows[0].imdbRating,
         imdbVotes = rows[0].imdbVotes;
-    // console.log(rows);
+    console.log(rows);
       // res.write(name);
-      res.write(year.toString());
+      res.render('pages/title',{
+        name:name.toString(),
+        plot:plot.toString(),
+        image_link:poster.toString()
+      });
         res.end();
   });
  });
+
+
 
 
 http.createServer(app).listen(1337, function(){

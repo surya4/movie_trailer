@@ -4,10 +4,16 @@
     <% include ../partials/nav %>
     <!-- <div class="container" id="about"> -->
       <section name="jumbotron">
-                  <div class="jumbotron text-center">
-                      <h2><%= qStr %></h2>
-                      <h2><%= JSON.stringify(rows) %></h2>
-                  </div>
+        <a class="btn" data-popup-open="popup-1" href="#">Open Popup #1</a>
+
+    		<div class="popup" data-popup="popup-1">
+    		    <div class="popup-inner">
+    		        <h2><%= name %></h2>
+    		        <p><%= plot %></p>
+                <img src="<%=image_link%>" alt="">
+    		        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+    		    </div>
+    		</div>
         </section>
 
     <!-- </div> -->
