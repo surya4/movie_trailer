@@ -4,4 +4,5 @@ Movie trailer project using :
   3. mysql
   4. jQuery
   5. EJS templating engine
-  6. bcryptjs
+  6. passportjs
+  7. bcryptjs
