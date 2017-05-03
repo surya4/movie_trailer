@@ -7,7 +7,7 @@ var conn = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: 'computer',
-  database: 'movie_trailers'
+  database: 'movie_trailer'
 });
 
 conn.connect(function(err) {
@@ -32,7 +32,7 @@ app.get('/title',function(req,res){
 
 app.post('/title', function(req,res,next) {
   var key = req.body.title;
-  // console.log("key"+JSON.stringify(req.body));
+  console.log("key"+JSON.stringify(req.body));
   var queryString = "SELECT * FROM data where title like '%"+key+"%'";
   conn.query(String(queryString),function (err,rows) {
     if (err) throw err;
@@ -50,13 +50,27 @@ app.post('/title', function(req,res,next) {
         awards = rows[0].Awards,
         poster = rows[0].Poster,
         imdbR = rows[0].imdbRating,
-        imdbVotes = rows[0].imdbVotes;
-    // console.log(rows);
+        imdbVotes = rows[0].imdbVotes,
+        vidLink = rows[0].tLink;
+    console.log(rows);
       // res.write(name);
       res.render('pages/title',{
         name:name.toString(),
         plot:plot.toString(),
-        image_link:poster.toString()
+        image_link:poster.toString(),
+        year:year.toString(),
+        rating:rating.toString(),
+        releas:releas.toString(),
+        dur:dur.toString(),
+        genre:genre.toString(),
+        director:director.toString(),
+        writer:writer.toString(),
+        actors:actors.toString(),
+        lang:lang.toString(),
+        awards:awards.toString(),
+        imdbR:imdbR.toString(),
+        imdbVotes:imdbVotes.toString(),
+        vidLink:vidLink.toString()
       });
         res.end();
   });

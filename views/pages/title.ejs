@@ -2,21 +2,50 @@
   <% include ../partials/header %>
   <body>
     <% include ../partials/nav %>
-    <!-- <div class="container" id="about"> -->
-      <section name="jumbotron">
-        <a class="btn" data-popup-open="popup-1" href="#">Open Popup #1</a>
+    <div class="container" id="about">
+      <div class="col-md-9">
+        <div class="col-md-12">
+          <div class="col-md-4 mposter">
+            <img src="<%=image_link%>" alt="">
+          </div>
+          <div class="col-md-8">
+            <h2><%= name %></h2>
+            <p><%= plot %></p>
+          </div>
+          <div class="col-md-8">
+            <div class="col-md-12 descr">
+              <span class="col-md-6 descr"><b>Release Date</b> <%= releas %></span>
 
-    		<div class="popup" data-popup="popup-1">
-    		    <div class="popup-inner">
-    		        <h2><%= name %></h2>
-    		        <p><%= plot %></p>
-                <img src="<%=image_link%>" alt="">
-    		        <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
-    		    </div>
-    		</div>
-        </section>
+              <span class="col-md-6 descr"><b>Language</b> <%= lang %></span>
+            </div>
+            <div class="col-md-12 descr">
+              <span class="col-md-6 descr"><b>Rating</b> <%= rating %></span>
+              <span class="col-md-6 descr"><b>IMDB Rating</b> <%= imdbR %></span>
+              <div class="col-md-12 descr"><b>Genre</b> <%= genre %></div>
+            </div>
+            <div class="col-md-12 descr cast">
+            <div class="col-md-12 descr"><b>Director</b> <%= director %></div>
+            <div class="col-md-12 descr"><b>Writer</b> <%= writer %></div>
+            <div class="col-md-12 descr"><b>Actors</b> <%= actors %></div>
+            <div class="col-md-12 descr"><b>Awards</b> <%= awards %></div>
+          </div>
+          </div>
+          <!--  -->
+              <!-- <iframe  src="<%=vidLink%>" frameborder="0"  allowfullscreen=>
+              </iframe> -->
+            <!--  -->
+             </div>
+               <div class="vid-box col-md-11 embed-responsive-16by9" style="
+    margin: 20px auto auto 31px;">
+               <iframe width="711" height="400" class="embed-responsive-item" src="https://www.youtube.com/embed/<%=vidLink%>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen>
+               <div id="player"></div></iframe>
+               </div>
 
-    <!-- </div> -->
+      </div>
+      <% include ../partials/sidebar %>
+
+
+     </div>
 <% include ../partials/footer %>
 <% include ../partials/scripts %>
 </body>
