@@ -30,10 +30,9 @@ app.use(flash());
 // var router = express.Router();
 var routes = require('./routes/index')(app, passport); // understand and resolve this
 
+app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(__dirname + '/public'));
+
 http.createServer(app).listen(1337, function(){
   console.log('Movie trailer is running on port ' + 1337);
 });
-
-
-app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(__dirname + '/public'));

@@ -78,6 +78,27 @@ img {
   height: 100%;
 }
 
+.list-group {
+  /*border-color: #e5e5e5 #eee #eee;
+  border-style: solid;*/
+  padding-left: 8%;
+
+
+}
+
+.new-box{
+  padding-top: 8%;
+  border-color: #e5e5e5 #eee #eee;
+  border-style: solid;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+
+.row{
+
+}
+
 .footer {
     position: absolute;
     bottom: 0;

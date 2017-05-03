@@ -52,8 +52,7 @@ app.post('/title', function(req,res,next) {
         imdbR = rows[0].imdbRating,
         imdbVotes = rows[0].imdbVotes,
         vidLink = rows[0].tLink;
-    console.log(rows);
-      // res.write(name);
+
       res.render('pages/title',{
         name:name.toString(),
         plot:plot.toString(),
@@ -77,10 +76,3 @@ app.post('/title', function(req,res,next) {
  });
 
  };
-
- // function isLoggedIn(req,res,next){
- //   if (req.isAuthenticated()) {
- //     return next();
- //   }
- //   res.redirect('/');
- // }
