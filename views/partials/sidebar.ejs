@@ -1,32 +1,16 @@
   <div class="list-group col-md-3">
     <span class="trnd-head"><h4>Trending</h3></span>
     <div class="row">
+      <% for(var i=0; i<3; i++) {%>
         <div class="col-xs-8 col-md-8 new-box">
-      <a href="#" class="">
-        <img src="<%=image_link%>" alt="trending">
+        <a href="#" class="">
+        <img src="<%=posters[i]%>" alt="trending">
         <div class="caption">
-        <h6><%=name%></h6>
+        <h6><%=names[i]%></h6>
         <hr>
         </div>
-      </a>
-  </div>
-    <div class="col-xs-8 col-md-8 new-box">
-  <a href="#" class="">
-    <img src="<%=image_link%>" alt="trending">
-    <div class="caption">
-    <h5><%=name%></h5>
-<hr>
-    </div>
-  </a>
-  </div>
-  <div class="col-xs-8 col-md-8 new-box">
-<a href="#" class="">
-  <img src="<%=image_link%>" alt="trending">
-  <div class="caption">
-  <h5><%=name%></h5>
-<hr>
-  </div>
-</a>
-</div>
+        </a>
+        </div>
+        <% } %>
     </div>
   </div>

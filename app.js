@@ -33,6 +33,12 @@ var routes = require('./routes/index')(app, passport); // understand and resolve
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(__dirname + '/public'));
 
+// app.use(function (req,res) {
+//   res.type('text/html');
+//   res.status(404);
+//   res.render('400');
+// });
+
 http.createServer(app).listen(1337, function(){
   console.log('Movie trailer is running on port ' + 1337);
 });

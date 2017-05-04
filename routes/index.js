@@ -32,8 +32,9 @@ app.get('/title',function(req,res){
 
 app.post('/title', function(req,res,next) {
   var key = req.body.title;
-  console.log("key"+JSON.stringify(req.body));
+  // console.log("key"+JSON.stringify(req.body));
   var queryString = "SELECT * FROM data where title like '%"+key+"%'";
+  var queryString2 = "SELECT title, poster from data order by count desc limit 3";
   conn.query(String(queryString),function (err,rows) {
     if (err) throw err;
     var name = rows[0].Title,
@@ -53,7 +54,15 @@ app.post('/title', function(req,res,next) {
         imdbVotes = rows[0].imdbVotes,
         vidLink = rows[0].tLink;
 
-      res.render('pages/title',{
+        conn.query(String(queryString2),function (err,newrow) {
+          if (err) throw err;
+
+          const names = newrow.map(row => row.title);
+          const posters = newrow.map(row => row.poster);
+
+          res.render('pages/title', {
+            names,
+            posters,
         name:name.toString(),
         plot:plot.toString(),
         image_link:poster.toString(),
@@ -71,8 +80,26 @@ app.post('/title', function(req,res,next) {
         imdbVotes:imdbVotes.toString(),
         vidLink:vidLink.toString()
       });
-        res.end();
-  });
+      res.end();
+      });
  });
+
+  });
+
+  app.get('partials/sidebar',function(req,res){
+    var queryString2 = "SELECT title, poster from data order by count desc limit 3";
+      conn.query(String(queryString2),function (err,newrow) {
+        if (err) throw err;
+
+        const names = newrow.map(row => row.title);
+        const posters = newrow.map(row => row.poster);
+
+        res.render('pages/title', {
+          names,
+          posters,
+        });
+      });
+
+      });
 
  };
