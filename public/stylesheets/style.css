@@ -32,8 +32,8 @@ body {
 
 .search-row{
 margin-top: 1%;
-background-color: #fff;
-border: 1px solid #fff;
+background: none;
+/*border: 1px solid;*/
 }
 
 .search-button{
