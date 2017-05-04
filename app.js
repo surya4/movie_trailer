@@ -31,7 +31,7 @@ app.use(flash());
 var routes = require('./routes/index')(app, passport); // understand and resolve this
 
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(path.join(__dirname + '/public')));
 
 // app.use(function (req,res) {
 //   res.type('text/html');
